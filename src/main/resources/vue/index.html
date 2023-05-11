@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>JWT-应用</title>
+    <style>
+        .logout_bt {
+            color: white;
+            background-color: #007aff;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+        table{
+            margin: 20px  auto 50px auto;
+        }
+        td{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<h3>欢迎<span th:text="${name}"></span>访问JWT协议应用 <span class="logout_bt" ><a style="color: white; text-decoration: none;" th:href="@{ ${logoutUrl} }" >单点退出</a></span></h3>
+<h4>登录用户信息如下: </h4>
+<pre style="border-color: darkgray; border-style: dotted;border-width: 2px;" th:text="${userInfo}"></pre>
+</body>
+</html>

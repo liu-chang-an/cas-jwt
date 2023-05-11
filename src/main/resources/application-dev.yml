@@ -1,0 +1,12 @@
+uc:
+  jwt:
+    # 认证中心服务地址
+    acUrlPrefix: http://192.168.59.117:30030/gc-starter-ac/
+    # 用户中心后端服务地址
+    ucPrefixUrl: http://192.168.59.117:30032/gc-starter-uc-server
+    # 此demo服务地址
+    demoServerUrl: http://192.168.59.117:30034/jwt-demo/login
+    # 应用在用户中心注册的appKey
+    appKey: 16803b2bcf2f49249fde5ed15fae8734
+    # 应用在用户中心注册的appSecret
+    appSecret: 4601ea65255c44c3ab2e70cc1aa35850

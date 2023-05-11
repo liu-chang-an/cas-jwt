@@ -1,0 +1,7 @@
+uc:
+  jwt:
+    ucPrefixUrl: http://192.168.212.28:8081/gc-starter-uc-server
+    acUrlPrefix: http://192.168.212.28:8080/gc_starter_ac_war/
+    demoServerUrl: http://192.168.212.28:8811/jwt-demo/login
+    appKey: 3b7e3a876f2d43f6a8dd81c79a14197f
+    appSecret: 4bae86eccf85472cad487f0d71909b21

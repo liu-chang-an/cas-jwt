@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2770643 */
+  src: url('iconfont.woff2?t=1631193033776') format('woff2'),
+       url('iconfont.woff?t=1631193033776') format('woff'),
+       url('iconfont.ttf?t=1631193033776') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.el-icon-lowcode-icon-test:before {
+  content: "\e604";
+}
+
+.el-icon-lowcode-shujuku-01:before {
+  content: "\e681";
+}
+
+.el-icon-lowcode-biao:before {
+  content: "\e612";
+}
+
+.el-icon-lowcode-pgsql:before {
+  content: "\e76e";
+}
+
+.el-icon-lowcode-oracle:before {
+  content: "\e6d3";
+}
+
+.el-icon-lowcode-mysql:before {
+  content: "\e601";
+}
+

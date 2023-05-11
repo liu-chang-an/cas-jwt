@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>jwt-demo</title>
+    <link rel="icon" th:href="@{/static/icon/favicon.ico}">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" th:href="@{/static/index.css}">
+    <link rel="stylesheet" th:href="@{/static/icon/iconfont.css}">
+    <script type="text/javascript" th:src="@{/static/vue.js}"></script>
+    <!-- 引入组件库 -->
+    <script type="text/javascript" th:src="@{/static/index.js}"></script>
+    <script type="text/javascript" th:src="@{/static/vm.mixins.js}"></script>
+    <script type="text/javascript" th:src="@{/static/axios.min.js}"></script>
+    <script type="text/javascript" th:src="@{/static/axiosFilter.js}"></script>
+</head>
+<body class="friendly">
+<b th:text="'Hello ' + ${name} + '!'" style="color: #FFFFFF"></b>
+<a th:href="@{ ${logoutUrl} }">
+    <button type="button" style="
+    border: none;
+    display: inline-block;
+    outline: 0;
+    padding: 8px 18px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    background-color: #e9686b;
+    text-align: center;
+    transition: .2s ease-out;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+    font-family: '微软雅黑';
+    border-radius: 2px;">登出</button>
+</a>
+</body>
+
+<script>
+    new Vue({
+        el: '#home',
+        mixins: [vmMixins],
+        data: function () {
+
+            return {
+            }
+        },
+        computed:{
+        },
+        // 监听数据源页面弹窗
+        watch: {
+        },
+        methods: {
+        },
+
+        mounted: function () {
+
+        },
+    })
+
+</script>
+<style>html, body {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: #F7F8FB;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    -webkit-margin-after: 0px;
+    -webkit-margin-before: 0px;
+    font-size: 15px;
+    color: #7F828B;
+    line-height: 21px;
+    margin-bottom: 4px;
+}
+
+body.friendly {
+    background: -webkit-linear-gradient(-45deg, #8363a1 0%, #74a8c3 100%);
+    background: linear-gradient(135deg, #8363a1 0%, #74a8c3 100%);
+}
+
+body.friendly .message__title {
+    color: #fff;
+}
+
+body.friendly p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body.friendly .hk-logo, body.friendly .app-icon {
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+body.friendly .info {
+    fill: rgba(255, 255, 255, 0.9);
+}
+
+body.friendly .btn {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+</style>
+</html>
